@@ -2,7 +2,8 @@
 
 const jwt = require("jsonwebtoken");
 
-const JWT_SECRET = "minel<3";
+const JWT_SECRET = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJuaWNrbmFtZSI6InRlc3R1c2VyIiwiaWF0IjoxNzM0MzYwMDQxLCJleHAiOjE3MzQ0NDY0NDF9.YkjSxEhCPIe7A7n5B1H4op3ghVPdkPQ3mMM4wL6UueE";
+
 
 function authenticateToken(req, res, next) {
   const authorization = req.headers.authorization;
